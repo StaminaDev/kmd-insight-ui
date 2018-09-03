@@ -11,10 +11,11 @@
 	<meta name="keywords" content="komodo, transactions, blocks, address, block chain, best block, mining difficulty, hash serialized">
 	<meta data-ng-if="currency.testnet" name="description" content="Komodo Insight. View detailed information on all testnet komodo transactions and block. {{ $root.title + $root.titleDetail }}">
 	<meta data-ng-if="!currency.testnet" name="description" content="Komodo Insight. View detailed information on all komodo transactions and block. {{ $root.title + $root.titleDetail }}">
-	<link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/icons/favicon.png" type="image/png">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,400italic">
 	<link rel="stylesheet" href="css/main.min.css">
   <link rel="stylesheet" href="css/common.min.css">
+   <link rel="stylesheet" href="css/guarda.css?v=1.2.1">
 </head>
 <body ng-cloak class="ng-cloak">
   <div>
@@ -49,14 +50,10 @@
 	<div id="footer" role="navigation">
     <div class="container" data-ng-controller="FooterController">
       <div class="links m20t pull-left">
-        <span class="languages" ng-show="availableLanguages.length > 0">
+         <div class="links m20t pull-left" style="font-size: 13px;" id="links_container">
+       <span class="languages" ng-show="availableLanguages.0">
           [
-          <a href="#"
-            ng-click="setLanguage(l.isoCode)"
-            ng-class="{'selected': defaultLanguage == l.isoCode}"
-            ng-repeat="l in availableLanguages">
-            <span ng-show="!$first"> &middot; </span> {{l.name}}
-          </a>
+          <a href="http://komodoblockexplorer.net">komodoblockexplorer.net</a>
           ]
         </span>
         &nbsp;
@@ -65,8 +62,9 @@
         <span> &middot; </span>
         <a href="tx/send" translate>broadcast transaction</a>
         ]
+        <p>Donate ETH: RTWi36qPhwf3XMuN3hy6gVr8JCPhGWz8Eq</p>
       </div>
-      <a class="insight m10v pull-right" target="_blank" href="http://insight.is">insight <small>API v{{version}}</small></a>
+       <a class="m10v pull-right email" target="_blank" href="mailto:komodoblockexplorer@gmail.com">komodoblockexplorer@gmail.com</small></a>
     </div>
   </div>
   <script language="javascript">window.apiPrefix = '/api';</script>
