@@ -1,12 +1,15 @@
 #wrap {
-	min-height: 900px; 
+	min-height: 1240px; 
 	height: 100%
 	margin: 0 
 	auto: -100px
 }
 
 @media (max-width: 1000px) { 
- 	#banner {position: static !important}; 
+ 	#banner {
+ 		position: static !important ;
+        margin-top: 320px !important ;
+ 	}; 
  	#wrap {
  	    margin: 0 auto -100px; 
     }
@@ -44,6 +47,8 @@
 #banner {
 	border:none; 
 	position: absolute;
+	margin-top: 560px;
+	margin-left:5px;
 }
 
 .guarda_banner {
