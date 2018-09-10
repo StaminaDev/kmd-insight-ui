@@ -17,8 +17,19 @@
        float: none !important;
     }
     #footer {
-      height: 125px !important;
+      height: 145px !important;
    }
+   #gecko_widget {
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+   }
+   #footer_container {
+     padding-left: 10px;
+   }
+
+   .coin-link {
+     float: none !important;
+    }
 
 }
 
@@ -33,6 +44,17 @@
 #links_container {
 	float: none !important;
 }
+
+.coin-link {
+ font-size:13px !important;
+ margin-top: -25px;
+}
+
+#gecko_widget {
+      margin-top: 104px;
+    margin-left: -10px;
+}
+
 
 .changenow_banner {
 	display: block; 
